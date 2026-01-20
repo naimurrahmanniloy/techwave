@@ -11,9 +11,7 @@
 }
 
 /* shared section starts here  */
-.gradiant-color {
-  background: linear-gradient(40deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
-}
+
 .font-color {
   background-image: linear-gradient(
     40deg,
@@ -30,7 +28,12 @@
   padding: 8px 30px;
   border-radius: 60px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  background: linear-gradient(40deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+}
+
+.btns:hover {
+  color: black;
+  transition: background-color 0.6s ease;
 }
 
 /* header section starts here  */
@@ -51,6 +54,10 @@
   display: flex;
   gap: 32px;
   color: white;
+}
+.navlist > li :hover {
+  color: #00ff88;
+  transition: color 0.3s ease;
 }
 .main-header {
   background-image: url(./assets/hero-bg.png);
@@ -94,8 +101,13 @@
   color: #00ff88;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+
   margin-left: 20px;
+}
+.new-btn:hover {
+  background: #262726;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 .btn-img {
   width: 18px;
@@ -256,6 +268,10 @@
   border-radius: 20px;
   cursor: pointer;
 }
+.social-links > img:hover {
+  background-color: #9688a8;
+  transition: background-color 0.9s ease;
+}
 .host-content > h2 {
   margin-bottom: 16px;
 }
@@ -273,6 +289,7 @@
   align-items: center;
   gap: 8px;
   padding-top: 32px;
+  cursor: pointer;
 }
 .footer-social {
   display: flex;
@@ -288,6 +305,10 @@
 .footer-links > p {
   color: #c4c4c4;
   font-size: 1rem;
+}
+.footer-links > p:hover {
+  color: #00ff88;
+  transition: color 0.3s ease;
 }
 .footer-text {
   margin-top: 32px;
