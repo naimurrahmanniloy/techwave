@@ -78,6 +78,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 40px;
 }
 .header-content > p {
   color: #fffafa;
@@ -167,6 +168,8 @@
 .question-content {
   width: 60%;
   margin: 0px auto;
+  height: 1121px;
+  padding-top: 120px;
 }
 #layout {
   margin-top: 40px;
@@ -174,4 +177,59 @@
 .card {
   padding: 30px;
   background-color: rgba(53, 17, 101, 0.4);
+  display: grid;
+  place-content: center;
+}
+.card > h4 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/* explore section starts here  */
+.explore {
+  background-color: #1a0b2e;
+}
+
+.feature {
+  width: 60%;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.yt-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+.yt-card {
+  width: 380px;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.yt-card > iframe {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.yt-card > h2 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+.yt-card > p {
+  padding: 10px;
+}
+.time-badge {
+  display: flex;
+  gap: 14px;
+  padding: 10px;
+}
+.time-badge > img {
+  width: 20px;
+  height: 20px;
+}
+.time-badge > p {
+  color: #00ff88;
 }
