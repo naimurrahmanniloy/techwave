@@ -79,11 +79,15 @@
   position: relative;
   top: 100px;
   left: 40%;
+  height: auto;
+  transform: translateX(3%);
 }
 .mic-img {
   position: absolute;
   top: 250px;
   left: 46%;
+  height: auto;
+  transform: translateX(7%);
 }
 
 .header-content {
@@ -343,6 +347,16 @@
   .hamburger {
     display: block;
   }
+  .header-content > h1 {
+    padding-top: 150px;
+  }
+  .badge {
+    top: 160px;
+    left: 70%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    animation: vertical-shaking 0.6s infinite;
+  }
   .main-header {
     min-height: 60vh;
     background: url("./assets/hero-bg.png") center / cover no-repeat;
@@ -351,25 +365,141 @@
     position: static;
   }
   .circle-img {
-    /* position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    transform: none; */
-    width: 200px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px auto;
+    transform: translateX(-25%);
   }
   .mic-img {
-    position: static; /* OR relative */
-    top: auto;
-    right: auto;
-    left: auto;
+    height: auto;
+    transform: translateX(-20%);
+  }
+  /* about section starts here  */
+  .about {
+    height: auto;
+  }
+  .about-content > h1 {
+    font-size: 2rem;
+  }
+  .rating-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .rating-content > h1 {
+    font-size: 2.2rem;
+  }
+  /* explore section starts  */
+  .explore {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  /* question section  */
+
+  .question-content {
+    height: auto;
+  }
+  .question-content > h1 {
+    font-size: 1.6rem;
+  }
+
+  /* featured section  */
+  .feature {
+    height: auto;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .feature > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .yt-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  /* host section  */
+  .host-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 32px;
+  }
+  .host {
+    height: auto;
+  }
+
+  /* footer section starts  */
+  .footer {
+    height: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    min-height: 60vh;
+    background: url("./assets/footer-bg.png") cover no-repeat;
+  }
+  .footer-content > h1 {
+    font-size: 2.5rem;
+  }
+  .social-links {
+    align-items: center;
+    justify-content: center;
+  }
+  .host-content {
+    text-align: center;
+  }
+  .footer-social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navlist {
+    display: none;
+  }
+  .head-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-header {
+    min-height: 60vh;
+    background: url("./assets/hero-bg.png") cover no-repeat;
+  }
+  .text-center {
+    position: static;
+  }
+  .header-content {
+    position: static;
     transform: none;
-    width: 200px;
+    margin: 0 auto;
+  }
+  .badge {
+    top: 160px;
+    left: 70%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    animation: vertical-shaking 0.6s infinite;
+  }
+  .circle-img {
+    transform: translateX(-20%);
+  }
+  .mic-img {
+    height: auto;
+    transform: translateX(-20%);
+  }
+  .header-content > h1 {
+    padding-top: 150px;
+  }
+  .mic-img {
+    transform: translateX(-20%);
   }
   /* about section starts here  */
   .about {
@@ -444,8 +574,7 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -473,25 +602,17 @@
     margin: 0 auto;
   }
   .circle-img {
-    /* position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    transform: none; */
-    width: 200px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px auto;
+    transform: translateX(-20%);
   }
   .mic-img {
-    position: static; /* OR relative */
-    top: auto;
-    right: auto;
-    left: auto;
-    transform: none;
-    width: 200px;
+    height: auto;
+    transform: translateX(-20%);
+  }
+  .header-content > h1 {
+    padding-top: 150px;
+  }
+  .mic-img {
+    transform: translateX(-20%);
   }
   /* about section starts here  */
   .about {
