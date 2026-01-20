@@ -364,13 +364,24 @@
   .text-center {
     position: static;
   }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .yt-card {
+    width: 100%;
+    height: auto;
+  }
   .circle-img {
-    transform: translateX(-20%);
+    transform: translateX(-40%);
     width: 65%;
   }
   .mic-img {
     height: 100px;
-    transform: translateX(0%);
+    transform: translateX(-50%);
     width: 100px;
   }
   /* about section starts here  */
