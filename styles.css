@@ -27,7 +27,7 @@
 .btns {
   color: #ffffff;
   border: none;
-  padding: 16px 12px;
+  padding: 8px 30px;
   border-radius: 60px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -36,10 +36,92 @@
 /* header section starts here  */
 .navbar {
   background-color: #1a0b2e;
+  padding: 14px;
+}
+.line {
+  color: rgb(48, 48, 48);
 }
 .navlist {
   list-style: none;
   display: flex;
   gap: 32px;
   color: white;
+}
+.main-header {
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 780px;
+}
+.text-center {
+  position: relative;
+}
+.circle-img {
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+.mic-img {
+  position: absolute;
+  top: 180px;
+  left: 46%;
+}
+
+.header-content {
+  top: 520px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-content > p {
+  color: #fffafa;
+  margin-top: 10px;
+}
+.btn-group {
+  margin-top: 20px;
+}
+.new-btn {
+  background-color: transparent;
+  border: 1px solid #00ff88;
+  padding: 7px 30px;
+  color: #00ff88;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+.btn-img {
+  width: 18px;
+  height: 18px;
+}
+.btn-img2 {
+  width: 15px;
+  height: 12px;
+}
+.badge {
+  position: absolute;
+  top: 100px;
+  left: 53%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  animation: vertical-shaking 0.6s infinite;
+  cursor: pointer;
+}
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
