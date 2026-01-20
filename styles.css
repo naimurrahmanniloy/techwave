@@ -82,7 +82,7 @@
 }
 .mic-img {
   position: absolute;
-  top: 180px;
+  top: 250px;
   left: 46%;
 }
 
@@ -107,7 +107,6 @@
   color: #00ff88;
   border-radius: 50px;
   cursor: pointer;
-
   margin-left: 20px;
 }
 .new-btn:hover {
@@ -125,7 +124,7 @@
 }
 .badge {
   position: absolute;
-  top: 100px;
+  top: 160px;
   left: 53%;
   padding: 10px 20px;
   border-radius: 30px;
@@ -289,6 +288,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+  width: 100%;
 }
 .footer-links {
   display: flex;
@@ -324,6 +324,11 @@
 /* Responsive parts starts from here  */
 @media (max-width: 576px) {
   /* header part  */
+  .header-content {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -346,12 +351,17 @@
     position: static;
   }
   .circle-img {
-    position: relative; /* OR relative */
+    /* position: relative;
     top: auto;
     right: auto;
     left: auto;
-    transform: none;
+    transform: none; */
     width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
   }
   .mic-img {
     position: static; /* OR relative */
@@ -363,7 +373,7 @@
   }
   /* about section starts here  */
   .about {
-    height: 500px;
+    height: auto;
   }
   .about-content > h1 {
     font-size: 2rem;
@@ -423,6 +433,129 @@
   .footer {
     height: auto;
     padding-bottom: 40px;
+    width: 100%;
+  }
+  .social-links {
+    align-items: center;
+    justify-content: center;
+  }
+  .host-content {
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navlist {
+    display: none;
+  }
+  .head-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-header {
+    min-height: 60vh;
+    background: url("./assets/hero-bg.png") cover no-repeat;
+  }
+  .text-center {
+    position: static;
+  }
+  .header-content {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+  .circle-img {
+    /* position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none; */
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  .mic-img {
+    position: static; /* OR relative */
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none;
+    width: 200px;
+  }
+  /* about section starts here  */
+  .about {
+    height: auto;
+  }
+  .about-content > h1 {
+    font-size: 2rem;
+  }
+  .rating-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .rating-content > h1 {
+    font-size: 2.2rem;
+  }
+  /* explore section starts  */
+  .explore {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  /* question section  */
+
+  .question-content {
+    height: auto;
+  }
+  .question-content > h1 {
+    font-size: 1.6rem;
+  }
+
+  /* featured section  */
+  .feature {
+    height: auto;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .feature > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .yt-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  /* host section  */
+  .host-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 32px;
+  }
+  .host {
+    height: auto;
+  }
+
+  /* footer section starts  */
+  .footer {
+    height: auto;
+    padding-bottom: 40px;
+    width: 100%;
   }
   .social-links {
     align-items: center;
