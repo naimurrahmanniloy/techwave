@@ -26,22 +26,8 @@
           <li><a href="">Episodes</a></li>
           <li><a href="">Host</a></li>
         </ul>
-        <button class="gradiant-color btns">
-          Subscribe
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6 grid"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-            />
-          </svg>
+        <button class="gradiant-color btns flex items-center gap-2">
+          Subscribe <img src="./assets/arrow.png" alt="" />
         </button>
       </nav>
       <hr class="line" />
@@ -106,7 +92,7 @@
             <p>EPISODES PUBLISHED</p>
           </div>
           <div class="rating-content">
-            <h1 class="text-5xl font-bold">4.9</h1>
+            <h1 class="text-5xl font-bold">4.9★</h1>
             <p>AVERAGE RATING</p>
           </div>
           <div class="rating-content">
@@ -294,7 +280,7 @@
           </h1>
           <div class="host-card">
             <img src="./assets/host.png" alt="Host Image" />
-            <div>
+            <div class="host-content">
               <h2 class="text-3xl font-semibold text-white">Alex Kumar</h2>
               <p class="text-base text-[#c4c4c4]">
                 Tech entrepreneur, productivity expert, and lifelong learner.
@@ -314,5 +300,34 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer section starts here  -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h1 class="text-8xl font-extrabold">
+        <span class="text-white">Tech</span><span class="font-color">Wave</span>
+      </h1>
+      <div class="footer-social">
+        <div class="footer-links">
+          <img src="./assets/spotify.png" alt="" />
+          <p>Spotify</p>
+        </div>
+        <div class="footer-links">
+          <img src="./assets/apple-podcast.png" alt="" />
+          <p>Apple Podcasts</p>
+        </div>
+        <div class="footer-links">
+          <img src="./assets/youtube-podcast.png" alt="" />
+          <p>Youtube</p>
+        </div class="footer-links">
+        <div class="footer-links">
+          <img src="./assets/twitter.png" alt="" />
+          <p>Twitter</p>
+        </div>
+        
+      </div>
+      <p class="text-[#c4c4c4] footer-text">© 2026 TechWave Podcast. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
